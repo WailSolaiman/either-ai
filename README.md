@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+# either-ai
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Marketing site for **ETHER_AI** — a single-page, dark “editorial tech” layout (hero video, credibility sections, pricing, CTA). Built with **Vite**, **React 19**, and **TypeScript**.
 
-Currently, two official plugins are available:
+**Repository:** [github.com/WailSolaiman/either-ai](https://github.com/WailSolaiman/either-ai)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- Vite 8, React 19, TypeScript 5.9  
+- Tailwind CSS 3 (custom design tokens, forms + container-queries plugins)  
+- Framer Motion (light section reveals)  
+- Radix UI (mobile nav dialog)  
+- react-icons (trust marquee)  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Requirements
 
-## Expanding the ESLint configuration
+- Node.js 20+ (or current LTS)  
+- npm  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Scripts
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Command        | Description                          |
+|----------------|--------------------------------------|
+| `npm run dev`  | Start dev server with HMR            |
+| `npm run build`| Typecheck + production build → `dist`|
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint                           |
+| `npm run format` | Format with Prettier               |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Local setup
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+git clone https://github.com/WailSolaiman/either-ai.git
+cd either-ai
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Content & assets
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Hero background: `public/hero.mp4` with poster `public/hero.png`  
+- Favicon: `public/favicon.svg`  
+- Design reference: `stitch-design/` (original spec + HTML export)  
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## License
+
+Private project (`"private": true` in `package.json`). Add a license file if you open-source it later.
