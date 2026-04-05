@@ -2,6 +2,7 @@
 
 Marketing site for **ETHER_AI** — a single-page, dark “editorial tech” layout (hero video, credibility sections, pricing, CTA). Built with **Vite**, **React 19**, and **TypeScript**.
 
+**Live:** [eitherai.wailsolaiman.com](https://eitherai.wailsolaiman.com)  
 **Repository:** [github.com/WailSolaiman/either-ai](https://github.com/WailSolaiman/either-ai)
 
 ## Stack
