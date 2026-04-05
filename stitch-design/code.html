@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ETHER_AI | Premium AI Automation Agency</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error": "#490006",
+                        "on-secondary-fixed": "#003a43",
+                        "tertiary-fixed-dim": "#4da8fe",
+                        "error-dim": "#d7383b",
+                        "surface-container-lowest": "#000000",
+                        "secondary-container": "#006877",
+                        "surface-bright": "#2c2c2c",
+                        "on-background": "#ffffff",
+                        "outline-variant": "#494847",
+                        "surface-container-highest": "#262626",
+                        "error": "#ff716c",
+                        "on-secondary-container": "#eafbff",
+                        "tertiary-container": "#4da8fe",
+                        "on-secondary-fixed-variant": "#005966",
+                        "inverse-on-surface": "#565554",
+                        "on-primary-container": "#00555a",
+                        "surface": "#0e0e0e",
+                        "on-primary-fixed": "#004145",
+                        "on-tertiary-fixed-variant": "#003b66",
+                        "surface-container-high": "#201f1f",
+                        "inverse-primary": "#006a70",
+                        "primary-dim": "#00e2ee",
+                        "primary-fixed-dim": "#00e2ee",
+                        "surface-dim": "#0e0e0e",
+                        "background": "#0e0e0e",
+                        "primary-container": "#00f1fe",
+                        "on-primary": "#005f64",
+                        "tertiary": "#6fb5ff",
+                        "surface-variant": "#262626",
+                        "surface-container-low": "#131313",
+                        "tertiary-fixed": "#6fb5ff",
+                        "on-tertiary": "#003258",
+                        "outline": "#777575",
+                        "surface-container": "#1a1919",
+                        "on-tertiary-container": "#002746",
+                        "secondary": "#00e0fe",
+                        "primary-fixed": "#00f1fe",
+                        "on-surface": "#ffffff",
+                        "surface-tint": "#99f7ff",
+                        "on-error-container": "#ffa8a3",
+                        "secondary-dim": "#00d1ed",
+                        "tertiary-dim": "#47a2f8",
+                        "primary": "#99f7ff",
+                        "on-secondary": "#004b56",
+                        "secondary-fixed": "#4be4ff",
+                        "on-surface-variant": "#adaaaa",
+                        "error-container": "#9f0519",
+                        "inverse-surface": "#fcf8f8",
+                        "secondary-fixed-dim": "#00d7f4",
+                        "on-tertiary-fixed": "#001930",
+                        "on-primary-fixed-variant": "#006065"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .glass-panel {
+            background: rgba(26, 25, 25, 0.4);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+        }
+        .video-overlay-gradient {
+            background: linear-gradient(to right, rgba(14, 14, 14, 0.95) 0%, rgba(14, 14, 14, 0.7) 40%, rgba(14, 14, 14, 0.2) 100%);
+        }
+        .intelligence-glow {
+            box-shadow: inset 0 0 10px rgba(0, 242, 255, 0.2), 0 0 40px rgba(0, 242, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-transparent backdrop-blur-xl shadow-[0_20px_80px_rgba(0,242,255,0.06)]">
+<div class="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
+<div class="text-2xl font-bold tracking-tighter text-white font-headline">ETHER_AI</div>
+<div class="hidden md:flex items-center gap-10 font-headline tracking-tight text-sm uppercase">
+<a class="text-white border-b-2 border-cyan-400 pb-1" href="#">Services</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">Case Studies</a>
+<a class="text-gray-400 hover:text-white transition-colors" href="#">Pricing</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-headline text-sm font-bold uppercase transition-all duration-300 hover:scale-105 active:scale-95">
+                Book a Demo
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<main class="relative h-screen min-h-[800px] w-full overflow-hidden flex items-center">
+<!-- Video Background -->
+<div class="absolute inset-0 z-0">
+<video autoplay="" class="absolute h-full w-full object-cover" loop="" muted="" playsinline="">
+<source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260402_143803_f635b644-d959-4f16-9d29-cedaeb5c6de0.mp4" type="video/mp4"/>
+</video>
+<!-- Overlay Layers -->
+<div class="absolute inset-0 video-overlay-gradient"></div>
+<div class="absolute inset-0 backdrop-blur-[2px]"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full pt-20">
+<!-- Content -->
+<div class="flex flex-col items-start max-w-2xl">
+<span class="font-headline text-secondary tracking-[0.2em] text-xs uppercase mb-6 font-bold">
+                    AI Automation Agency
+                </span>
+<h1 class="font-headline text-5xl md:text-7xl font-bold leading-[1.1] text-white tracking-tighter mb-8">
+                    We Build <span class="text-primary-container">Intelligent Systems</span> That Work For You
+                </h1>
+<p class="text-on-surface-variant text-xl md:text-2xl font-light leading-relaxed mb-6 font-body">
+                    Automate operations, engage customers, and scale faster with custom AI solutions tailored to your business.
+                </p>
+<p class="text-on-surface-variant/70 text-base leading-relaxed mb-10 max-w-lg font-body">
+                    From chatbots to full AI workflows, we design, build, and deploy systems that save time and increase revenue.
+                </p>
+<div class="flex flex-wrap gap-6 mb-16">
+<button class="bg-primary-container text-on-primary-container px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm hover:shadow-[0_0_30px_rgba(0,241,254,0.4)] transition-all duration-300 active:scale-95">
+                        Get Started
+                    </button>
+<button class="border border-outline-variant/30 text-white px-10 py-4 font-headline font-bold uppercase tracking-widest text-sm glass-panel hover:bg-white/10 transition-all duration-300 active:scale-95">
+                        See How It Works
+                    </button>
+</div>
+<!-- Trust Badges -->
+<div class="flex flex-col gap-4 opacity-60">
+<span class="font-headline text-[10px] uppercase tracking-[0.3em] text-on-surface-variant">Trusted by 100+ businesses</span>
+<div class="flex items-center gap-8 grayscale brightness-200 contrast-100">
+<img class="h-6 w-auto" data-alt="minimalist tech logo representing a global enterprise" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL4FhGt43PetniWANiIVyZO4EH79TFZmEf-MZe5VgtVauxpbjQzzriq8qcbgNElZaYEhAYgt8ZeWDJKssYRLrpRCeYbiC7vJBWF_D4vVSP6qIJJgcCBRTPE5dpoaUiE8GrFoiYfFpxflFsHKLU2fbJeQ-yH7ftAKFgTGHRLzf0nv3siPwahg4lzSEgFPYciLDEW8uYxb4iWBfJWEqLNbk4H9lHseaKN5ETJ_DZS7Sq8UznAMMGsaL5SavHx3bGbh1yPkCccHaR7KwK"/>
+<img class="h-6 w-auto" data-alt="clean geometric logo for a software startup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn-j-12Pgi0BsQQcbHL6-BMqDrTyKZO-95Ir7wz8W_gtxG-S-YVwW_J43OreMpVaY5EyKc473SB1Q1HIkwkFzUUqtOJl6YVYfD1G-UoTdFFfVZIwqUZ_Ufd96gu5ujXG0xohTWsveWF-wPxjnEIQod2pSysP6jKIH1i79hSYmUxOXCnl-78LRkE19RNO_jRQMv83_jYFCrAUtgx8vtdq2USOjze6nAG4bfAw8gjEnwHfpGgVQSd3WAyHVhPSogo67fzIVC6mrqwMpA"/>
+<img class="h-6 w-auto" data-alt="modern typography based logo for a digital platform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADzZLl0D8t9SFtf-7YlfN9qAzRsN5rOxVoXTEKIIQ9KJ5rKn0odACX_oJl06FOgp1C39IlCEd1FfG_GJ-6eC9EEEKMD9isOVMNx52mGGsYk0haPtztOtVUzYA_lIkves-hE4N6eMZDCL7vVNosDAjxvw2X9BrDV08gg3WexCZFUJbYr2_HUg1-QouQP6xStlKZN_9Wc-r2Tbcos09jWz61CeyC3ZPjrcNTrcZVvhnR51ZXgxzRGGj1OWFuYUZY-bMXkX3KGl9g5ZYL"/>
+<img class="h-6 w-auto" data-alt="abstract icon logo for a logistics company" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPx26NBcjZ0S9iC5lDzMxoVJ71lUgF_KFBcp5IW7VfM_oE9O1VTKF0DpX9O4OoRpcHdbO8Fomhu0Hz1hUbP_xxK3eIm54DLeC7wsYBGHwdEGbKxH9Tb7Ny7DeuRVouZupRk3lHpXNbINplGuccQAYA3kNJHBikABjSFUaYkC02UVkbhHbT_vGMpReLrFs7ad4oWLk39gE8HpPva9OO9MCh0NEtjTNbQ2KDUeHlr8CaaU_Z_mmAo-DwITt9-9BkF3ohiUPou8DjfpB_"/>
+</div>
+</div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+<span class="text-[10px] uppercase tracking-[0.4em] font-headline">Discover</span>
+<div class="w-[1px] h-12 bg-gradient-to-b from-primary-container to-transparent"></div>
+</div>
+</main>
+<!-- AI Interface Showcase Section -->
+<section class="bg-surface relative py-32 px-8 overflow-hidden">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary-container/30 to-transparent"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<!-- Left Side Copy -->
+<div class="space-y-8">
+<div class="inline-flex items-center gap-3 px-4 py-2 bg-primary-container/5 border border-primary-container/20 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-[10px] font-headline uppercase tracking-widest text-primary-container">Next-Gen Interface</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-white tracking-tighter leading-tight">
+                    Intuitive Command, <br/>Autonomous Action.
+                </h2>
+<p class="text-on-surface-variant text-lg leading-relaxed max-w-lg">
+                    Experience the ETHER_AI dashboard—a seamless bridge between human intent and machine execution. Real-time optimization at your fingertips.
+                </p>
+<div class="flex items-center gap-6 pt-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">bolt</span>
+<span class="text-xs uppercase tracking-widest font-headline font-semibold">Low Latency</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary">security</span>
+<span class="text-xs uppercase tracking-widest font-headline font-semibold">Neural Encryption</span>
+</div>
+</div>
+</div>
+<!-- Right Side Dashboard Preview -->
+<div class="relative">
+<div class="absolute -inset-10 bg-primary-container/5 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="relative z-10 glass-panel intelligence-glow rounded-xl p-6 border border-white/5 transform hover:-translate-y-2 transition-transform duration-700">
+<!-- Dashboard Mock -->
+<div class="flex items-center justify-between mb-8">
+<div class="flex items-center gap-3">
+<div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+<div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+<div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+</div>
+<div class="px-3 py-1 bg-surface-container-highest rounded text-[10px] font-headline text-primary tracking-widest uppercase">AI Engine Active</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-lg">smart_toy</span>
+</div>
+<div class="bg-surface-container rounded-lg rounded-tl-none p-4 text-sm text-on-surface-variant leading-relaxed">
+                                Analyzing current supply chain throughput... Found 14% optimization opportunity in regional node B. Shall I implement the automated rerouting?
+                            </div>
+</div>
+<div class="flex items-start gap-4 justify-end">
+<div class="bg-primary-container text-on-primary-container rounded-lg rounded-tr-none p-4 text-sm font-medium">
+                                Yes, apply changes and generate the ROI report.
+                            </div>
+<div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white text-lg">person</span>
+</div>
+</div>
+<div class="pt-4 border-t border-white/5">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded-lg">
+<div class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Processing Speed</div>
+<div class="text-xl font-headline font-bold text-white">0.42ms</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded-lg">
+<div class="text-[10px] text-on-surface-variant uppercase tracking-wider mb-1">Accuracy Rate</div>
+<div class="text-xl font-headline font-bold text-secondary">99.98%</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Decorative Element -->
+<div class="absolute -bottom-8 -left-8 glass-panel p-4 rounded-lg border border-white/10 shadow-2xl animate-pulse">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">verified</span>
+<div class="text-[10px] font-headline uppercase tracking-widest text-white">Neural Sync Complete</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="bg-surface py-32 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-4">
+<h3 class="text-5xl font-headline font-bold text-white tracking-tighter">94%</h3>
+<p class="text-on-surface-variant text-sm tracking-widest uppercase font-headline">Task Automation Success</p>
+<div class="h-[1px] w-full bg-outline-variant/20"></div>
+</div>
+<div class="space-y-4">
+<h3 class="text-5xl font-headline font-bold text-white tracking-tighter">12.4k</h3>
+<p class="text-on-surface-variant text-sm tracking-widest uppercase font-headline">Hours Saved Monthly</p>
+<div class="h-[1px] w-full bg-outline-variant/20"></div>
+</div>
+<div class="space-y-4">
+<h3 class="text-5xl font-headline font-bold text-white tracking-tighter">2.8x</h3>
+<p class="text-on-surface-variant text-sm tracking-widest uppercase font-headline">Average Revenue Growth</p>
+<div class="h-[1px] w-full bg-outline-variant/20"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full border-t border-white/5 bg-[#0e0e0e]">
+<div class="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="text-lg font-black text-white font-headline">ETHER_AI</div>
+<div class="flex gap-8 font-['Inter'] text-xs tracking-widest uppercase text-gray-500">
+<a class="hover:text-cyan-300 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-cyan-300 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-cyan-300 transition-colors" href="#">Twitter</a>
+<a class="hover:text-cyan-300 transition-colors" href="#">LinkedIn</a>
+</div>
+<div class="font-['Inter'] text-xs tracking-widest uppercase text-gray-500">
+                © 2024 KINETIC ETHER. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>
