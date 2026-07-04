@@ -3,8 +3,8 @@ import { useCallback, useState } from 'react'
 import { cn } from '../lib/cn'
 import { heroEnter } from '../lib/motion'
 
-const HERO_VIDEO = '/hero.mp4'
-const HERO_POSTER = '/hero.png'
+const HERO_VIDEO = `${import.meta.env.BASE_URL}hero.mp4`
+const HERO_POSTER = `${import.meta.env.BASE_URL}hero.png`
 
 export function Hero() {
   const [videoReady, setVideoReady] = useState(false)
